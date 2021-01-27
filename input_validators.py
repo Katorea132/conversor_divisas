@@ -45,7 +45,7 @@ def check_amount(amount):
         float: el numero en forma de float si es valido
     """
     try:
-        if re.match(r'^[1-9]\d*(\.\d{1,2})?', amount):
+        if re.match(r'^[0-9]\d*(\.\d{1,2})?', amount):
             return float(amount)
         else:
             raise TypeError()
